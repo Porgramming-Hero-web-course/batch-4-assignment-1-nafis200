@@ -5,14 +5,18 @@
 
     const countWordOccurrences: CountOcc = (sentence,word)=>{
         const SentenceCaseInsensitive:string = sentence.toLocaleLowerCase()
-
         const SentenceExpression = SentenceCaseInsensitive.split(/\W+/)
-        
         const wordCaseInsensitive: string = word.toLocaleLowerCase()
         
-        const FindWord: string[] = SentenceExpression.filter((word: string)=> word === wordCaseInsensitive)
-  
-        return FindWord.length
+        let Countmatch = 0;
+        
+        for(const word of SentenceExpression){
+           if(word.includes(wordCaseInsensitive)){
+             Countmatch++;
+           }
+        }
+
+        return Countmatch
       }
 
 
