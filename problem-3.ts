@@ -11,8 +11,8 @@
         let Countmatch = 0;
         
         for(const word of SentenceExpression){
-           if(word.includes(wordCaseInsensitive)){
-             Countmatch++;
+           if(word === wordCaseInsensitive){
+            Countmatch++;
            }
         }
 

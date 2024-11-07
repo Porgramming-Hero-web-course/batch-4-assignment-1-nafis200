@@ -6,7 +6,7 @@
         var Countmatch = 0;
         for (var _i = 0, SentenceExpression_1 = SentenceExpression; _i < SentenceExpression_1.length; _i++) {
             var word_1 = SentenceExpression_1[_i];
-            if (word_1.includes(wordCaseInsensitive)) {
+            if (word_1 === wordCaseInsensitive) {
                 Countmatch++;
             }
         }
