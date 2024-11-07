@@ -16,7 +16,4 @@
         email: 'alice@example.com'
     };
     console.log(validateKeys(person, ["name", "age"]));
-    console.log(validateKeys(person, ["name", "address"]));
-    console.log(validateKeys(person, ["name", "age", "email"]));
-    console.log(validateKeys(person, ["name", "address", "age", "email"]));
 }

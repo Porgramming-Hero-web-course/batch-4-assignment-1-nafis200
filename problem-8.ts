@@ -34,4 +34,5 @@ const person : Person = {
 console.log(validateKeys(person, ["name", "age"]));
 
 
+
 }
