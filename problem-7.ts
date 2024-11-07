@@ -2,7 +2,7 @@
 
     class Car{
 
-       constructor(public name: string, public model, public year:number) {}
+       constructor(public name: string, public model:string, public year:number) {}
 
        public getCarAge(){
           return 2024 - this.year
