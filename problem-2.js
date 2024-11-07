@@ -1,10 +1,9 @@
 {
     var removeDuplicates = function (param) {
         var UniqueArray = [];
-        for (var _i = 0, param_1 = param; _i < param_1.length; _i++) {
-            var num = param_1[_i];
-            if (!UniqueArray.includes(num)) {
-                UniqueArray.push(num);
+        for (var i = 0; i < param.length; i++) {
+            if (!UniqueArray.includes(param[i])) {
+                UniqueArray.push(param[i]);
             }
         }
         return UniqueArray;

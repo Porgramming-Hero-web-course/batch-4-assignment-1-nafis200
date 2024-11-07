@@ -7,9 +7,9 @@
     const removeDuplicates: Duplicate = (param)=>{
         
         let UniqueArray : number[] = []
-        for(let singleDigit of param){
-            if(!UniqueArray.includes(singleDigit)){
-                UniqueArray.push(singleDigit)
+        for(let i = 0; i < param.length; i++){
+            if(!UniqueArray.includes(param[i])){
+                UniqueArray.push(param[i])
             }
         }
        return UniqueArray
