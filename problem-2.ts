@@ -6,8 +6,13 @@
     
     const removeDuplicates: Duplicate = (param)=>{
         
-        let UniqueArray: number[] = Array.from(new Set(param))
-        return UniqueArray
+        let UniqueArray : number[] = []
+        for(let singleDigit of param){
+            if(!UniqueArray.includes(singleDigit)){
+                UniqueArray.push(singleDigit)
+            }
+        }
+       return UniqueArray
     }
 
 
