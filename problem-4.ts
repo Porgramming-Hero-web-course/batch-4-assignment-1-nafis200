@@ -20,7 +20,7 @@
     const calculateShapeArea:CalculateArea = (param)=>{
         
         if(param.shape === 'circle'){
-            return Math.PI * param.radius * param.radius
+            return parseFloat((Math.PI * param.radius * param.radius).toFixed(2))
         }
         else if(param.shape === 'rectangle'){
              return param.height * param.width
